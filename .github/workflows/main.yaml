@@ -21,10 +21,10 @@ jobs:
 
       - name: Versioning tag
         id: versioning
-        uses: anothrNick/github-tag-action@1.39.0
+        uses: anothrNick/github-tag-action@1.36.0
         env:
           GITHUB_TOKEN: ${{ secrets.VERSIONING }}
-          WITH_V: true
+          #WITH_V: true
 
       - name: Build with Maven
         run: |
